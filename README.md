@@ -1,2 +1,5 @@
 # pradiptak29.github.io
-The first website
+This repository is for education purpose only.
+Contents:-
+  Python
+  Problem Solving using Python

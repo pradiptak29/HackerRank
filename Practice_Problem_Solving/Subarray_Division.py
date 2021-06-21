@@ -27,11 +27,12 @@ def birthday(s, d, m):
         add = add + s[i] - s[i - m]
         if add == d:
             count += 1
-    print(count)
+    #print(count)
+    return count
 
 
 if __name__ == '__main__':
-    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input().strip())
     s = list(map(int, input().rstrip().split()))
@@ -40,5 +41,5 @@ if __name__ == '__main__':
     m = int(first_multiple_input[1])
     result = birthday(s, d, m)
 
-    # fptr.write(str(result) + '\n')
-    # fptr.close()
+    fptr.write(str(result) + '\n')
+    fptr.close()
